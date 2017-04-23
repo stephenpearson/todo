@@ -4,7 +4,7 @@ require 'test_helper'
 require 'todo/model/repository'
 require 'todo/store/base_store'
 
-class BaseStoreTest < Minitest::Test
+class RepositoryStoreTest < Minitest::Test
   def test_accessible_attrs
     store = Todo::Store::BaseStore
     repo = Todo::Model::Repository.new(store)
