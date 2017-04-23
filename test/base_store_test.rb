@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'todo/store/base_store'
 
-class StoreTest < Minitest::Test
+class BaseStoreTest < Minitest::Test
   def test_accessible_attrs
     bs = Todo::Store::BaseStore.new
     assert_respond_to bs, :location
@@ -30,6 +30,13 @@ class StoreTest < Minitest::Test
     end
     assert_raises NotImplementedError do
       bs.delete_item(nil, nil, nil)
+    end
+  end
+
+  def test_close_method
+    bs = Todo::Store::BaseStore.new
+    assert_raises NotImplementedError do
+      bs.close_repository(nil)
     end
   end
 end

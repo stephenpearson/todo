@@ -27,6 +27,10 @@ module Todo
       def delete_item(_item, _list, _repository)
         raise NotImplementedError
       end
+
+      def close_repository(_repository)
+        raise NotImplementedError
+      end
     end
   end
 end
