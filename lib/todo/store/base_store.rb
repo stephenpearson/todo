@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Todo
   module Store
     # The abstract BaseStore class, parent of all stores

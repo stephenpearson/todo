@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 require 'todo/model/repository'
 require 'todo/store/base_store'

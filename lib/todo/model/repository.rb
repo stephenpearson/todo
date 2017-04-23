@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Todo
   module Model
     # An abstract representation of a collection of Todo lists
